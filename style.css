@@ -1,0 +1,86 @@
+
+:root {
+  --azul: #263A80;
+  --roxo: #6845B5;
+  --fundo: #f5f6fc;
+  --texto: #20243a;
+  --branco: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+}
+
+header {
+  background: linear-gradient(135deg, var(--azul), var(--roxo));
+  color: var(--branco);
+  padding: 24px 20px;
+}
+
+main {
+  width: min(100% - 32px, 1000px);
+  margin: 28px auto;
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+}
+
+button, .button {
+  display: inline-block;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 18px;
+  background: var(--roxo);
+  color: var(--branco);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d7d9e7;
+  border-radius: 9px;
+  font: inherit;
+  margin: 8px 0 16px;
+}
+
+.card {
+  background: var(--branco);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 16px 0;
+  box-shadow: 0 5px 20px #263a8012;
+}
+
+a {
+  color: var(--roxo);
+}
+
+img, video {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 20px 16px;
+  }
+
+  main {
+    width: calc(100% - 24px);
+    margin: 18px auto;
+  }
+
+  .card {
+    padding: 16px;
+  }
+}
